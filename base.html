@@ -1,0 +1,73 @@
+/* Premium Candidate Review - Purple Glass Theme */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+* { font-family: 'Inter', sans-serif; }
+
+body {
+margin: 0;
+background: radial-gradient(ellipse at top, #2e1065 0%, #0f0a1e 100%);
+min-height: 100vh;
+color: #e9e5ff;
+}
+
+.topbar {
+background: rgba(15,10,30,0.8) !important;
+backdrop-filter: blur(20px);
+border-bottom: 1px solid rgba(124,58,237,0.3);
+padding: 16px 32px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.brand {
+color: white !important;
+font-size: 22px;
+font-weight: 800;
+text-decoration: none;
+letter-spacing: -0.5px;
+}
+.brand span { color: #a78bfa; }
+
+.container {
+max-width: 1200px;
+margin: 30px auto;
+padding: 0 20px;
+}
+
+.card, .dashboard-card, table, .flash {
+background: rgba(255,255,255,0.08) !important;
+backdrop-filter: blur(20px);
+border: 1px solid rgba(255,255,255,0.12);
+border-radius: 16px;
+box-shadow: 0 8px 32px rgba(124,58,237,0.15);
+}
+
+table { width: 100%; border-collapse: collapse; overflow: hidden; }
+th { background: rgba(124,58,237,0.2) !important; color: #c4b5fd !important; padding: 14px; }
+td { padding: 14px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+
+.btn, button {
+background: linear-gradient(135deg, #7c3aed, #4f46e5) !important;
+color: white !important;
+border: none !important;
+padding: 10px 18px;
+border-radius: 10px;
+font-weight: 600;
+cursor: pointer;
+transition: 0.2s;
+}
+.btn:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(124,58,237,0.4); }
+
+.btn-outline {
+background: transparent !important;
+border: 1px solid #7c3aed !important;
+}
+
+footer {
+text-align: center;
+padding: 20px;
+color: rgba(255,255,255,0.5);
+margin-top: 40px;
+}
+.flash.success { background: rgba(34,197,94,0.15) !important; border-left: 4px solid #22c55e; }
+.flash.error { background: rgba(239,68,68,0.15) !important; border-left: 4px solid #ef4444; }
